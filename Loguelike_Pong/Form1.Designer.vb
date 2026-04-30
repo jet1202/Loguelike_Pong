@@ -22,10 +22,17 @@ Partial Class Form1
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SuspendLayout()
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
 
 End Class
