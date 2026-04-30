@@ -22,7 +22,13 @@ Partial Class Form1
     'コード エディターを使って変更しないでください。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.TcpSockets1 = New Experiment.TcpSocket.TcpSockets(Me.components)
         Me.SuspendLayout()
+        '
+        'TcpSockets1
+        '
+        Me.TcpSockets1.SynchronizingObject = Me
         '
         'Form1
         '
@@ -35,4 +41,5 @@ Partial Class Form1
 
     End Sub
 
+    Friend WithEvents TcpSockets1 As Experiment.TcpSocket.TcpSockets
 End Class
