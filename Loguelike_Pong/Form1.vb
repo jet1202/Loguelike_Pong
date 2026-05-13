@@ -4,6 +4,7 @@ Imports Experiment.TcpSocket
 Public Class Form1
     Const port As Integer = 20000 ' ポート番号
     Dim enc As System.Text.Encoding = System.Text.Encoding.Default ' 文字コードに「Shift-JIS」を指定
+    Dim form2 As New Form2
 
     Private Sub TcpSockets1_Accept(ByVal sender As System.Object, ByVal e As Experiment.TcpSocket.AcceptEventArgs) Handles TcpSockets1.Accept
 
@@ -22,6 +23,6 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        form2.Show()
     End Sub
 End Class
